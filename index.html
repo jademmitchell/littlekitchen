@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little Kitchen: Cafe and Venue</title> 
+
+        <meta name="author" content="Jade Mitchell">
+        <meta name="description" content="Little Kitchen is a café located in the heart of Fremantle. Owner Hannah Baker is passionate about making good food. Her cafés unique atmosphere, simple but beautiful décor and delicious food, is a place where people can come to relax, and enjoy themselves. You can hire out the café as a venue for weddings and other events, just contact us to arrange a date of hire or a tour of our venue. ">
+        <meta name="keywords" content="Cafe, Coffee, Delicious food, Fremantle, Fremantle cafe, Wedding, Venue hire, Little Kitchen">
+
+        <!-- shoelace link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+  
+        <link rel="stylesheet" href="css/style.css">         
+        <link rel="icon" href="images/logo.png"> 
+                
+    </head>
+
+    <body id="top"> <!-- allows logo to navigate to the top of the website when clicked-->
+        
+<!--NAVIGATION-->
+    
+    <nav id="nav" class="nav-colour">
+    <!--&#9776; for generic burger lines --> <!-- this is a HTML entity for the 3 lines ... can put emojis with these codes (emojipedia) ... can put image-->
+        <label for="burger">&#9776;</label> <!-- pairing lable with checkbox ... hiding checkbox so clicking label-->
+        <input id="burger" type="checkbox"> <!-- can't animate.-->
+      
+            <ul>
+                <li><a href="#about"><b>About Us</b></a></li> <!-- "UL" (unordered list) and "LI" (list), dont have to individually name things with class and ID. LI displays top to bottom-->
+                <li><a href="#eat"><b>Eat with Us</b></a></li> 
+                <li><a href="#contact"><b>Contact Us</b></a></li>
+                <li><a href="#book"><b>Book Us</b></a></li>
+            </ul>
+       
+    </nav> <!-- big box (nav), lable then imput--> <!-- hashtag "#"" is for ID, dot "." is for class-->
+
+
+<!--HEADER-->
+
+    <div class="box">
+        <img class="background" src="images/backgroundimage.png" alt="Cafe"> <!-- REFERENCE: Photo by Kong Ruksiam from Pexels -->
+            <div class= "paragraph">
+                <h1 class="text"> Little Kitchen </h1> <!-- only need ONE h1. Usually dont go past number three heading-->
+                    <h3> Cafe and Venue </h3>
+                    <h3> Fremantle, Western Australia</h3> <!-- seperated to create a gap (margin) in between elements/lines of text -->
+                    <h3> Kitchen open everyday</h3>
+                    <h3> 7am-3pm </h3>
+            </div>
+    </div>
+
+
+<!--MAIN CONTENT-->
+       
+    <!-- ABOUT US SECTION -->
+    <section id="about">
+
+        <div class="image-div">
+            <img class="image image1" width="400" src="images/aboutus1.png" alt="Hannah Baker"> <!-- REFERENCE: Photo by Tim Douglas from Pexels-->
+            <img class="image image2" width="400" src="images/aboutus2.png" alt="Open"> <!-- REFERENCE: Photo by Tim Douglas from Pexels -->
+            <img class="image bean" src="images/page-elements/beans1.png">
+        </div>
+
+        <div class="text">
+            <h2> About Us </h2>
+            <p>
+                Little Kitchen is owned and run by Hannah Baker, in a quaint little spot in Fremantle 
+                Australia. We are passionate about making good food, and want to create a place 
+                where people can come to relax, and enjoy themselves. Our cafe, Little Kitchen, 
+                is an integral part of the Fremantle scene. You can hire out the café as a venue for 
+                weddings and other events by simply clicking the 'Book Us' button in our menu. Our 
+                cafe has a unique atmosphere, simple but beautiful décor and delicious food! 
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ZERO WASTE POLICY SECTION -->
+    <section id="zero-waste">
+        <div class="text">
+            <h2> Zero Waste Policy</h2>
+            <p>
+                As Second Slice Cafe has become a popular spot for coffee and small bites by the Northcote 
+                community, we feel that we should do our part to help the environment. 
+                We have a zero waste policy and use only organic locally sourced ingredients in all our dishes. 
+                All our customers share a passion for sustainability and reducing waste.
+            </p>
+            <img class="leaf1" src="images/page-elements/leafright.png">
+        </div>
+        
+            <ul class="icon-list">
+                <div>
+                    <img class="icon-images" src="/images/icons/icon1.png" />
+                    <p> Assuring no single use plastics are used (such as take away containers) </p>
+                </div>
+                <div> 
+                    <img class="icon-images" src="/images/icons/icon3.png" />
+                    <p> Recycling and using a composting systems </p>
+                </div>
+                <div>
+                    <img class="icon-images" src="/images/icons/icon4.png" />
+                    <p> Using our own garden, with fresh ingredients being used in dishes each day </p>
+                </div>
+                <div>
+                    <img class="icon-images" src="/images/icons/icon2.png" />
+                    <p> Encouraging customers to bring in reusable coffee cups </p>
+                </div>
+                    
+                    <img class="image" width="400" src="images/zerowaste.png" alt="Hannah Baker"> <!-- REFERENCE: Photo by Tim Douglas from Pexels-->
+                    <img class="image bean" src="images/page-elements/beans2.png">
+            </ul>
+
+    </section>
+
+
+     <!-- EAT WITH US SECTION -->
+    <section id="eat">
+
+        <div class="text">
+            <h2> Eat with Us </h2>
+            <p>
+                What better way to start your day with a carefully crafted, hand poured cup of coffee.  <!-- REFERENCE: text for sections taken from The Attic Cafe website: https://www.theatticfreo.com.au/-->
+                All coffee beans are sourced directly from a farmer, ensuring a sustainable and 
+                financially stable model for the producers to rely on. Our coffee is a single origin 
+                bean ensuring consistent quality, completeness of flavour and a seamless approach to 
+                understanding varietals and styles. It is lightly roasted which captures the essence of 
+                chocolate and caramel. Enjoy our coffee black, white or filtered.  
+            </p>
+            <img class="leaf2" src="images/page-elements/leafleft.png">
+        </div>
+
+            <sl-button class="menu-button">View Our Menu</sl-button>
+
+            <div class="menu-wrapper">
+                <img class="menu-item" src="/images/menu/dish1.png" />
+                <img class="menu-item" src="/images/menu/dish2.png" />
+                <img class="menu-item" src="/images/menu/dish3.png" />
+                <img class="menu-item" src="/images/menu/dish4.png" />
+                <img class="menu-item" src="/images/menu/dish5.png" />
+                <img class="menu-item" src="/images/menu/dish6.png" />
+                <img class="menu-item" src="/images/menu/dish7.png" />
+                <img class="menu-item" src="/images/menu/dish8.png" />
+                <img class="menu-item" src="/images/menu/dish9.png" />
+            </div>
+
+    </section>
+
+
+    <!-- BOOK US SECTION -->
+    <section id="book">
+
+        <div class="text">
+            <h2> Book Us </h2>
+            <p>
+                We get pretty busy here in the heart of fremantle - one way to avoid any queues or 
+                disappointment is to book your table ahead of time, whether its fathers or mothers day, 
+                birthdays, business meetings, public holidays, weekends, a study sesh, or even a wedding!
+                No matter the time of the year, we’re here to help you secure your spot. Any groups bigger 
+                than ten, please contact us directly. If your looking at hiring us for a wedding venue, 
+                contact us to organise a tour and book a date for your special day!
+            </p>
+            <img class="leaf3" src="images/page-elements/leafright.png">
+        </div>
+
+            <sl-button class="book-button">Book a Function</sl-button>
+
+            <ul class="icon-list2">
+                    <div>
+                        <img class="icon" src="/images/icons/icon5.png" />
+                        <p> Casual Bookings </p>
+                    </div>
+                    <div> 
+                        <img class="icon" src="/images/icons/icon6.png" />
+                        <p> Birthday Parties </p>
+                    </div>
+                    <div>
+                        <img class="icon" src="/images/icons/icon7.png" />
+                        <p> Weddings </p>
+                    </div>
+
+                    <img class="image image1" width="400" src="images/bookus1.png" alt="Hannah Baker"> <!-- REFERENCE: Photo by Tim Douglas from Pexels-->
+                    <img class="image image2" width="400" src="images/bookus2.png" alt="Open"> <!-- REFERENCE: Photo by Tim Douglas from Pexels -->
+                    <img class="image bean" src="images/page-elements/beans3.png">
+            </ul>
+
+    </section>
+
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact">
+        <div class="text">
+            <h2> Contact Us </h2>
+            <p>
+                We’re open all day, every day from seven to three! Our kitchen can meet 
+                gluten free, vegan and other dietary requirements. We offer split billing 
+                and there are no additional fees or charges, even on public holidays!
+                Secure parking is available on collie street around the corner from us.
+                The fremantle train station is a five minute walk away.
+                We accept table bookings but you’re welcome to walk on in.
+                Bring your dog, your mates, your favourite book, and we'll see you soon!
+                Contact our lovely staff members for any questions or queries about booking our venue. 
+            </p>
+            <img class="leaf4" src="images/page-elements/leafleft.png">
+            <img class="image bean" src="images/page-elements/beans4.png">
+        </div>
+        <div class="location"> <!-- parent element -->
+                <div class="lefttext"> <!-- child element -->
+
+                    <p class="left">
+                        <b>Address:</b> 16 Bannister St Fremantle, WA 6160
+                        
+                        <br>
+                        <br>
+
+                        <b>Opening Hours:</b> open 7 days a week <br>
+                        <b>Weekdays:</b> 6:00am – 5:30pm <br>
+                        <b>Weekends:</b> 7:00am – 4:00pm <br>
+
+                        <br>
+
+                        <b>Phone:</b>  (03) 9329 0298 <br>
+                        <b>Email:</b> hello@littlekitchen.com
+                    </p>
+
+                        <div class="social2"> 
+                            <a href="https://www.facebook.com/"> 
+                                <img src="images/facebook.png" alt="Facebook social media icon">
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <img src="images/instagram.png" alt="Instagram social media icon">
+                            </a>
+                            <a href="https://twitter.com/">
+                                <img src="images/twitter.png" alt="Twitter social media icon">
+                            </a>
+                        </div>
+
+                        <div class="map"> <!-- child element -->
+                            <a href="https://www.google.com/maps/place/16+Bannister+St,+Fremantle+WA+6160/@-32.0552103,115.743959,17z/data=!3m1!4b1!4m5!3m4!1s0x2a32a17aa60f4ecb:0x24f201c79e63ae82!8m2!3d-32.0552149!4d115.7461477">
+                                <img width="200" src="images/map.png" alt="map of fremantle"> <!-- REFERENCE: map screenshotted from The Attic Cafe website: https://www.theatticfreo.com.au/-->
+                            </a>
+                        </div>
+
+                </div>
+
+        </div>
+
+    </section>
+
+
+
+<!--MAIN CONTENT ENDS-->
+        
+<!--FOOTER-->
+
+    <section class="footer">
+        
+        <div class="top-icon">
+            <h2>Little Kitchen</h2>  
+
+            <a href="#top">
+                <img class="top-arrow" src="/images/icons/backtotop.svg" />
+            </a>
+        </div>
+
+        <div class="footer-images">
+            <img class="image" width="400" src="images/eatwithus3.png" alt="Hannah Baker"> <!-- REFERENCE: Photo by Tim Douglas from Pexels-->
+            <img class="image" width="400" src="images/footer2.png" alt="Open"> <!-- REFERENCE: Photo by Tim Douglas from Pexels -->
+            <img class="image" width="400" src="images/eatwithus1.png" alt="pouring coffee"> <!-- REFERENCE: Photo by Uriel Mont from Pexels -->
+            <img class="image" width="400" src="images/footer4.png" alt="Hannah Baker"> <!-- REFERENCE: Photo by Tim Douglas from Pexels-->
+            <img class="image" width="400" src="images/eatwithus2.png" alt="Open"> <!-- REFERENCE: Photo by Tim Douglas from Pexels -->
+            <img class="image" width="400" src="images/footer6.png" alt="pouring coffee"> <!-- REFERENCE: Photo by Uriel Mont from Pexels -->
+            <img class="image" width="400" src="images/footer7.png" alt="Hannah Baker"> <!-- REFERENCE: Photo by Tim Douglas from Pexels-->
+            <img class="image" width="400" src="images/footer8.png" alt="Open"> <!-- REFERENCE: Photo by Tim Douglas from Pexels -->
+        </div>
+
+        <ul class="bottom-links">
+            <li><a href="#about"><b>About Us</b></a></li> 
+            <li><a href="#eat"><b>Eat with Us</b></a></li> 
+            <li><a href="#contact"><b>Contact Us</b></a></li>
+            <li><a href="#book"><b>Book Us</b></a></li>
+        </ul>
+
+
+    </section>
+
+
+    <!-- ----- SCRIPTS ----- -->
+    <script src="/js/main.js"></script> <!-- linking to my javascript file-->
+    <!-- <script src="/js/js-library.js"></script>
+    <script src="/js/smoothscroll.js"></script> -->
+
+
+    </body> 
+</html>

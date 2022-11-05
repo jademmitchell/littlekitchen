@@ -1,0 +1,698 @@
+/* ===== A3 Little Kitchen Website ===== */
+/* ===== SMALL DESKTOP: content is designed for a max-width 1366 (Media queries for laptop/small desktop has not been done) ===== */
+
+/* {
+    border: solid red 2px;
+} */
+/*border around all objcts (universal selector) */
+
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+    /* some basic css resetting */
+
+body { 
+  margin: 0; 
+  box-sizing: border-box; 
+  overflow-x: hidden;
+} /* removes little margin around entire body of site that is there by default */
+a { text-decoration: none; color:black; }
+
+html{
+  scroll-padding-top: 120px;                /* adds pretend padding above menu words (eg. about us) so navigation snaps to above the word not below it ... wont work on safari*/
+}
+
+
+  @font-face {
+    font-family: Selima;
+    src: url(../fonts/selima/Selima\ .ttf);
+  }
+
+  @font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+  }
+
+
+/* ==========HEADER============= */
+  
+  .box {
+    position: relative;
+  }
+
+  .background {
+    width: 100%;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 11vw;
+    font-family: "selima";
+    color: #454545;
+    margin: -30px 0 0 0;
+  }
+
+  .paragraph {
+    position:absolute;
+    top: 0;
+    margin: 220px 100px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: "Lora";
+    color: #454545;
+  }
+
+
+/* ==========NAVIGATION============= */
+
+  li {
+    font-family: "lora";
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;                   /* bring navigation bar on top of the background image*/ 
+    }
+
+  .nav-colour {
+    background-color: #ffb7ac;
+  }
+
+  ul li {                      /* making LI display left to right*/
+    display: inline-block; 
+    padding: 30px;
+    }
+
+  ul {
+    padding-left: 550px;
+  }
+
+  nav label, #burger {               /* if you have a form, that would be "label", so use nav label*/
+    display: none;                 /* makes hamburger menu disapear on website (big size)*/
+    }
+
+  a{
+    color: white;
+    padding: 0vw 10px; /* top, right, bottom, left */
+  }
+
+  a:hover {                      /* colour when hovering over menu navigation*/
+    color: #ff7864;
+  }
+
+
+/* ==========GENERAL============= */
+
+sl-button::part(base) {
+  font-family: "Lora";
+  border-radius: 50px;
+  padding: 0 20px;
+}
+
+sl-button::part(base):hover {
+  color: white;
+  background: #ff7864;
+  opacity: 0.5;
+}
+
+  body {
+    font-family: "lora";
+    color: #454545;;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "selima";
+    font-size: 4vw;
+  }
+
+  p {
+    font-family: "lora";
+    text-align: left;
+    /* padding: 2vw 15vw; */
+    line-height: 3vw;
+    font-size: 1vw;
+  }
+
+
+/* ========== ABOUT US SECTION STYLING ============= */
+
+  #about {
+    background-color: #FFDFCC;
+    position: relative;
+    display: flex;
+    height: 550px;
+  }
+
+  #about .image-div {
+    width: 10%;
+    left: 0;
+  }
+
+  #about .image {
+    position: absolute;
+  }
+
+  #about .image1 {
+    width: 30%;
+    top: 10%;
+    left: 10%;
+  }
+
+  #about .image2 {
+    width: 22%;
+    top: -30%;
+    left: 30%;
+  }
+
+  #about .bean {
+    top: 25%;
+    left: 35%;
+  }
+
+  #about .text {
+    width: 600px;
+    margin-left: 550px;
+    padding: 60px 0;
+  }
+
+
+/* ========== ZERO WASTE POLICY SECTION STYLING ============= */
+
+  #zero-waste .text{
+    background-color: white;
+    height: 350px;
+    width: 1150px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  #zero-waste .image {
+    position: relative;
+    top: -140%;
+    right: -52%;
+  }
+
+  #zero-waste .bean {
+    position: relative;
+    top: -100%;
+    right: -12%;
+  }
+
+  #zero-waste ul {
+    background-color: #EEBC9F;
+    width: 100vw;
+  }
+
+  .icon-list{
+    height: 350px;
+    padding: 50px 120px;
+  }
+  .icon-list div {
+    display: flex;
+    padding: 10px;
+  }
+  .icon-list img {
+    margin-right: 80px;
+  }
+
+  .text .leaf1 {
+    position: relative;
+    top: -150%;
+    left: 57%;
+  }
+
+
+/* ========== EAT WITH US SECTION STYLING============= */
+
+#eat .text {
+  background-color: white;
+  height: 300px;
+  width: 1150px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.menu-wrapper {
+  background-color: #FFDFCC;
+  height: 450px;
+  max-width: 100vw;
+  display: flex;
+  overflow: scroll;
+  padding-left: 200px;
+}
+
+.menu-item {
+  margin: 70px;
+  height: 300px;
+}
+
+.menu-button {
+  transform: translate(-50%, -50%);
+  margin: 70px 0;
+  left: 50%;
+  top: 50%;
+}
+
+.text .leaf2 {
+  position: relative;
+  top: -20%;
+  left: -56%;
+}
+
+
+/* ========== BOOK US SECTION STYLING ============= */
+
+#book .text{
+  background-color: white;
+  height: 350px;
+  width: 1150px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#book .image {
+  position: absolute;
+}
+
+#book .image1 {
+  position: relative;
+  left: 0%;
+  top: -150%;
+}
+#book .image2 {
+  position: relative;
+  width: 22%;
+  left: -15%;
+  top: -125%;
+}
+
+#book .bean {
+  position: relative;
+  top: -230%;
+  left: -69%;
+}
+
+#book ul {
+  background-color: #EEBC9F;
+  width: 100vw;
+}
+
+.icon-list2{
+  height: 350px;
+  padding: 50px 120px;
+}
+
+.icon-list2 div{
+  display: flex;
+  padding: 10px;
+  margin-left: 700px;
+}
+
+.icon-list2 img {
+  margin-right: 80px;
+}
+
+.icon-list2 p {
+  padding-top: 20px;
+}
+
+.icon {
+  width: 100px;
+}
+.book-button {
+  transform: translate(-50%, -50%);
+  margin: 50px 0;
+  left: 50%;
+  top: 50%;
+}
+
+.text .leaf3 {
+  position: relative;
+  top: 60%;
+  left: 57%;
+}
+
+
+/* ========== CONTACT US SECTION STYLING ============= */
+
+#contact .text{
+  background-color: white;
+  height: 350px;
+  width: 1150px;
+  margin: auto;
+}
+
+.left {
+  text-align: center;
+  width: 5000px;
+  padding-right: 400px;
+  left: 0;
+}
+
+.location {
+  height: 450px;
+  background-color: #FFDFCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.map img{
+  width: 330%;
+  display: flex;
+  position: relative;
+  top: -20%;
+  left: -130%;
+}
+
+.lefttext {
+  padding-top: 15px;
+  width: 60%;
+  display: flex;
+}
+
+.social2 {
+  width: 20vw;
+  display: flex;
+  position: absolute;
+  padding: 360px 0 0 90px;
+}
+
+.social2 img {
+  width: 30px;
+  display: block;
+}
+
+/* footer elements */
+.text .leaf4 {
+  position: relative;
+  top: 130%;
+  left: -45%;
+}
+
+#contact .bean {
+  position: relative;
+  top: 80%;
+  left: 7%;
+}
+
+
+
+/* ==========FOOTER STYLIING============= */
+
+  .gap {
+    padding: 4vw;                 /* gap between photos and footer created by empty div*/
+  }
+
+  .footer {
+    background-color: #B37E67;
+    padding: 0 1.5vw;
+  }
+
+  .footer h2 {
+    font-size: 5vw;
+    margin: 0;
+    padding: 50px 50px 50px 530px;
+    color: white;
+    display: inline-block;
+  }
+
+  .footer{
+    width: 100vw;
+    margin: auto;
+  }
+  .footer-images {
+    width: 800px;
+    margin: auto;
+  }
+
+  .footer-images img {
+    width: 20%;
+    padding: 10px;
+  }
+
+  .bottom-links {
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .top-icon {
+    width: 100vw;
+  }
+
+  .top-icon .top-arrow{
+    display: inline-block;
+    width: 40px;
+    padding-left: 350px;
+  }
+
+  .element {
+    position: relative;
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+/* ==============================   RESPONSIVE DESIGN =================================  */
+
+/* TABLET (recommended breakpoint 768 x 1024 pixels) */
+@media only screen and (max-width: 768px) { 
+
+  /* ======== NAVIGATION ========= */
+
+    nav label { /* makes hamburger menu appear (smaller screen)*/
+      display: block;
+      padding: 45px;
+    }
+
+    ul {
+      padding: 0; /* moved border lines to left edge*/
+      margin: 0; /* removed gap between bottom border line */
+    }
+
+    li a {
+      padding: 0 20px; /* moved words from left side of screen*/
+    }
+
+    nav ul {
+      display: none;
+    }
+        
+    nav input:checked ~ ul { /* two dots(:)= sudo class... noodle (~)= means proceeds*/ 
+      display: block; /* this is what makes the checkbox display nav ... this only works because the ul tag proceeds the nav (checkbox)*/
+    } 
+
+    nav ul li { /* displays menu items dropping down (verticle) in stead of horizontal*/
+      border-top: 3px solid #ff7864; /* border-top not border, so the lines dont over lap*/
+      display: block;
+      padding: 20px; /* creates less space around words*/ 
+    }
+
+    nav ul li:last-of-type { /* picks last of that type (last of list tag)*/ /* if you wanted to target top, first-of-type or first-child*/
+      border-bottom: 3px solid #ff7864;
+    }
+
+    .logo, .social { 
+      display: none;
+    }
+
+
+  /* ========= HEADER ========= */
+
+    .background {
+      padding-top: 100px; 
+    }
+
+    .paragraph {
+      top:60%; /* pushed text away from top of background image*/ 
+    }
+        
+    .text {
+      font-size: 9vw; /* had to decrease font soze as firefox displayed differently to chrome and safari*/
+      margin: 10px; /* creates less of a margin */
+    }
+        
+    h3 {
+      font-size: 2vw;
+    }
+
+
+  /* ========= MAIN CONTENT ========= */
+
+    h2 {
+      font-size: 7vw;
+    }
+
+    p {
+      padding: 0vw 15vw 2vw 15vw;  /* top, right, bottom, left */
+      line-height: 4.5vw;
+      font-size: 2vw;
+    }
+
+
+  /* ========= SECTION 3 =========*/
+
+    .location img{
+      width:100%; /* making image bigger*/
+    }
+
+    .left {
+      padding: 0; /* allows text to go further to the left than the paragraph*/
+    }
+
+    .social2 {
+      margin-left: 10vw;
+    }
+
+    .location {
+      padding: 5vw; /* creates space between the edges of the screen*/
+    }
+
+
+  /* ==========FOOTER STYLIING============= */
+
+    .footertext {
+      padding: 20px 50px 0 50px;
+      font-size: 1.5vw;
+    }
+
+
+}
+
+
+
+/* ===== MOBILE: Media queries for small mobile resolution. ===== */
+/* ===== (recommended breakpoint 360 x 640 pixels) ===== */
+@media only screen and (max-width: 640px) { 
+
+  /* ========= HEADER =========*/ 
+
+    .paragraph {
+      top:65%; /* pushed text away from top of background image*/ 
+    }
+
+    h3 {
+      font-size: 2.5vw;
+    }
+
+    .text {
+      font-size: 8vw; /* needed to change the font size as the text was different in safari compared to chrome*/
+    }
+   
+
+  /* ========= MAIN CONTENT ========= */
+
+    h2 {
+      font-size: 10vw;
+    }
+    
+    p {
+      padding: 0vw 8vw 3vw 8vw;  /* top, right, bottom, left */
+      line-height: 5.5vw;
+      font-size: 3vw;
+    }
+
+
+  /* ========= SECTION 3 =========*/
+
+    .location img{
+      width:130%; /* making image bigger*/
+    }
+
+    .left {
+      font-size: 2.25vw; /* 'email', 'phone etc. smaller text*/
+      padding: 0; /* allows text to go further to the left than the paragraph*/
+    }
+
+    .social2 {
+      margin-left: 10vw; 
+      width: 30vw;
+    }
+
+    .social2 a {
+      padding: 0 1.5vw;
+    }
+
+    .location {
+      padding: 0 7vw; /* creates space between the edges of the screen*/
+    }
+
+
+  /* ==========FOOTER STYLIING============= */
+
+    .footertext {
+      padding: 20px 20px 0 20px;
+      font-size: 2.25vw;
+    }
+
+    .links {
+      font-size: 2.25vw;
+    }
+
+
+  }
+
+
+
+@media only screen and (max-width: 360px) {  /* could not load this size on safari*/
+
+  /* ======== NAVIGATION ========= */ 
+
+    html{
+      scroll-padding-top: 80px; /* addding less padding above menu words so navigation snaps to above the word not below it*/
+    }
+
+    nav label { /* makes hamburger menu appear (smaller screen)*/
+      padding: 20px;
+    }
+
+    ul {
+      font-size: 3vw; /* decreasing size of menu mavigation text*/
+    }
+
+    li a {
+      padding: 0 5px; /* moves words closer to left edge of screen*/
+    }
+
+
+  /* ========= HEADER ========= */
+
+    .background {
+      padding-top: 60px; /* decreased size of navigation menu bar so must reposition background image*/
+    }
+        
+    .text {
+      font-size: 10vw;
+      margin: 0;
+    }
+        
+    h3 {
+      font-size: 3vw;
+    }
+
+
+  /* ==========FOOTER STYLIING============= */
+
+    .footertext {
+      padding: 20px 20px 0 20px;
+      font-size: 1.9vw;
+    }
+
+    .links img {
+      width: 80px;
+    }
+
+
+
+}
+
